@@ -137,10 +137,10 @@ let c = 3;
 if( a>=b  && a>=c) {
     console.log("a is the maximum number")
 }
-if( b>a  && b>c) {
+if( b>=a  && b>=c) {
     console.log("b is the maximum number")
 }
-if( c>a  && c>b) {
+if( c>=a  && c>=b) {
     console.log("c is the maximum number")
 }
 
