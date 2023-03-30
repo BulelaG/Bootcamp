@@ -25,7 +25,7 @@
 
 let numbers = [2,9,11,7,5,3,4,8,15,23,44]
 
-for(let i = 0; i <= 11 ; i++){
+for(let i = 0; i <= numbers.length ; i++){
 
     if (numbers[i]%2 === 0){
      console.log(numbers[i])
