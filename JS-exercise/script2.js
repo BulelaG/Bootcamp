@@ -24,12 +24,11 @@
 // const date = new Date("2022-03-25");
 
 let numbers = [2,9,11,7,5,3,4,8,15,23,44]
-let i = numbers
 
 for(let i = 0; i <= 11 ; i++){
 
-    if (i%2 === 0){
-     console.log(i)
+    if (numbers[i]%2 === 0){
+     console.log(numbers[i])
     }
      
     }
