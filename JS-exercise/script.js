@@ -114,7 +114,11 @@
 // console.log(a); // => 2
 // console.log(b); // => 1
 
+
+
 // using IF statement to check condition and return results
+
+
 
 // let a = -20 ;
 // if (a>10){
@@ -130,18 +134,34 @@
 // }
 
 
-let a = 1;
-let b = 3;
-let c = 3;
+ 
 
-if( a>=b  && a>=c) {
-    console.log("a is the maximum number")
-}
-if( b>=a  && b>=c) {
-    console.log("b is the maximum number")
-}
-if( c>=a  && c>=b) {
-    console.log("c is the maximum number")
-}
+// let a = 1;
+// let b = 3;
+// let c = 3;
+
+// if( a>=b  && a>=c) {
+//     console.log("a is the maximum number")
+// }
+// if( b>=a  && b>=c) {
+//     console.log("b is the maximum number")
+// }
+// if( c>=a  && c>=b) {
+//     console.log("c is the maximum number")
+// }
 
 
+// let a = 10
+// let b = '15'
+// let c = a + b
+// console.log(c)
+
+
+let a = 200;
+
+if (a%2 === 0){
+    console.log("It is an even number")
+}
+else{
+    console.log("It is not an even number")
+}
