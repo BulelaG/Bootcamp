@@ -157,11 +157,55 @@
 // console.log(c)
 
 
-let a = 200;
+// --------------------Modulus using JS---------------------
 
-if (a%2 === 0){
-    console.log("It is an even number")
+function CheckEvenNumber(){
+
+    let number = Number(document.getElementById("evennumber").value)
+
+    
+    if(isNaN(number)){
+        alert("Please Enter a number")
+    }else if (number%2 === 0){
+        console.log(typeof number)
+        alert(number + " "+"is an even number")
+    }
+    else{
+        alert(number + " "+"is an odd number")
+    }
+    
+
+
+
+    
+    // var name = document.getElementById("search").value
+    // alert("Hello"+ " "+name + "!")
+
+
 }
-else{
-    console.log("It is not an even number")
-}
+
+
+
+// let a = 4;
+
+// if (a%2 === 0){
+//     console.log("It is an even number")
+// }
+// else{
+//     console.log("It is not an even number")
+// }
+
+
+// program to check if the number is even or odd
+// take input from the user
+// const number = prompt(" enter number")
+
+// //check if the number is even
+// if(number % 2 == 0) {
+//     console.log("The number is even.");
+// }
+
+// // if the number is odd
+// else {
+//     console.log("The number is odd.");
+// }
