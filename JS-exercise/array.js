@@ -199,15 +199,17 @@
 
 let num1 = [1,3,5,9]
 let num2 = [0,2,4,6]
-let num3 = [...num1,...num2]
+ let num3 = [num1,num2]   // spread oparator
+
 let num4 = num1.concat(num2)
-num3.sort((a,b) => a-b)
+// num3.sort((a,b)=>b-a)
 
 console.log("This is nums", num3)
-console.log(num1)
-console.log(num2)
+
+// console.log(num1)
+// console.log(num2)
 console.log(num3)
-console.log(num4)
+// console.log(num4)
 
 
 
