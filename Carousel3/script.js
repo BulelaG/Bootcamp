@@ -25,31 +25,35 @@ let images = ["./Age-C.png","./Temp-C.png","./Emoji-S.png"];
 // images.push("Temp-C.png")
 // images.push("Emoji-S.png")
 let index = 0;
+img.src = images[index]
 
 function next(){
 
-img = document.getElementById("img")
-
-   img.src = images[index]
-    index++;
+  index++;
+   
+    
 
   if(index >= images.length){
-      index  = 0;
+    index  = 0;
+    
+      
   }
 
+  img.src = images[index]
  
 }
 
 
 function prev(){
 
-  img = document.getElementById("img")
-
-  img.src = images[index]
-    index--;
+  index--;
+  
+    
   if(index < 0){
       index  = images.length - 1;
+      
   }
+  img.src = images[index]
  
 }
 
