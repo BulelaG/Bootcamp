@@ -8,23 +8,29 @@ margin: 0;
 display: flex;
 
 }
+h1{
+    text-align: center;
+    border-bottom:solid 1px white;
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 .Buttons{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
 }
 
 
 .slider{
-    margin-top: 70px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
 
 img{
-    border: solid ;
-    border-radius: 3%;
+    border: solid 0px ;
+    border-radius: 4%;
     object-fit: contain;
     height: 300px;
     width: 400px;
