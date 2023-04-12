@@ -12,7 +12,21 @@ li{
     flex: 0 0 100%;
     transition: all 0.5s ease;
 }
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
+}
+.carousel-img{
+
+
+    height: 300px;
+    width: 350px;
 }

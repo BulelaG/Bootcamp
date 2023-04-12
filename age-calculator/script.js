@@ -1,13 +1,11 @@
-function calcAge(yb){
+function calcAge(){
 
-   let age = 2023 - yb
+let yb = Number(document.getElementById("year-born").value)
+let age = 2023 - yb
 
-if(isNaN(yb)) return("Enter your birth year") 
-else if( age >= 0) return age;
-else if (age<0) return("Age can't be a negative number")
-
-
-
-
+if(!yb) alert("Enter your birth year") 
+else if( age >= 0) alert(age);
+else if (age<0) alert("Age can't be a negative number")
+  
 }
 console.log(calcAge(2024))

@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+padding-top: 5%;
+padding-left: 470px;
+padding-right: 470px;
+
+}
+h1{
+    color: rgb(245, 110, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    border-bottom: solid 1px rgb(245, 110, 0);
+    color: white;
+    font-style:oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:300;
+}
+button{
+    color: black;
+    font-style:oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:600;
+}
+input{
+    color: black;
+    font-style:oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:600;
+}
+footer{
+    color: rgb(245, 110, 0) ;
+    border-bottom: solid 1px rgb(245, 110, 0);
+    padding-top: 40%;
+}
+a{
+    color: white;
+}

@@ -1,3 +1,9 @@
 .image-slider .images {
     display: none;
+      height: 200px;
+    width: 300px;
+  }
+  img{
+    height: 200px;
+    width: 300px;
   }

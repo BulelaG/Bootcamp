@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+padding-top: 10%;
+padding-left: 470px;
+padding-right: 470px;
+
+}
+.person-age{
+    border: solid 1px white;
+
+}
+h1{
+    border-bottom:solid 1px white;
+    color: green;
+    font-weight: 900;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    color: white;
+    font-style:oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:300;
+}
+button{
+    color: black;
+    font-style:oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:900;
+    height: 50px;
+    width: 100px;
+}
+input{
+    color: black;
+    font-style:oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:800;
+    height: 50px;
+    width: 292px;
+}
