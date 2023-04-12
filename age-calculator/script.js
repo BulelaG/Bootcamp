@@ -1,11 +1,15 @@
 function calcAge(){
 
-let yb = Number(document.getElementById("year-born").value)
+let yb = document.getElementById("year-born").value
 let age = 2023 - yb
+let results = document.getElementById("results")
+results.innerHTML = age
 
-if(!yb) alert("Enter your birth year") 
-else if( age >= 0) alert(age);
-else if (age<0) alert("Age can't be a negative number")
+
+
+if(!yb) results.innerHTML =("Enter your birth year") 
+else if (age<0){ results.innerHTML =("Age can't be a negative number")}
+else if(yb < 0){ results.innerHTML =("Year can't be a negative number")}
+else if ( age >= 0){results.innerHTML =(age)}
   
 }
-console.log(calcAge(2024))

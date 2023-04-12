@@ -1,29 +1,28 @@
-// function TempConverter(F,C){
-
-// console.log(TempConverter())
-
-
 
 // ------------Fahrenheits to Celcius-----------
 
 function FahToCel(){
 let F = Number(document.getElementById("Celcius").value)
-
-
 let C = (F-32)*5/9
 
-if(!F) alert("Please enter a value.") 
+result = document.getElementById("result")
+result.innerHTML = C
 
-else if(isNaN(F)) alert("Please enter a value") 
+
+if(!F) result.innerHTML = ("Please enter a value.") 
+ 
+else if(isNaN(F)) result.innerHTML =("Please enter a value") 
+
+else if(C<-273.15) result.innerHTML =("It can not be this cold") 
 
 else if(C<16){
-    alert(C+ "°" +" " + " " +"It's cold, you might want to carry a jacket")
+    result.innerHTML =(C+ "°" +" " + " " +"It's cold, you might want to carry a jacket")
 }
-else if(C>=21 && 16<=C){
-    alert(C+"°" + " " + " " +"It is warm, you could wear t-shirt and jeans.")
+else if(C<=21 && C>=16){
+    result.innerHTML =(C+"°" + " " + " " +"It is warm, you could wear t-shirt and jeans.")
 }
-else(C>21)
-    alert(C+ "°" +" " + " " +"It's a hot day, you can rock your shorts.")
+else if(C>21)
+result.innerHTML =(C+ "°" +" " + " " +"It's a hot day, you can rock your shorts.")
 
 
 
@@ -32,23 +31,30 @@ else(C>21)
 // console.log(FahToCel(1))
 
 
-// ------------Fahrenheits to Celcius-----------
+// ------------ Celcius to Fahrenheits-----------
 
 function CelToFah(){
+
 let c = Number(document.getElementById("Fahrenheitz").value)
 let F = (c*9/5 )+32 
-// console.log(F)
-if(!c) alert("Please enter a value") 
-else if(isNaN(c)) alert("Please enter a value") 
+
+result2 = document.getElementById("results")
+result2.innerHTML = F
+
+if(!c) result2.innerHTML =("Please enter a value")
+
+else if(isNaN(c)) result2.innerHTML =("Please enter a value")
+
+else if(F<-460) result2.innerHTML =("It can not be this cold ")
+
 else if(F<16){ 
-    alert(F+"°"+" " +" " +"It's cold, you might want to carry a jacket")
+    result2.innerHTML =(F+"°"+" " +" " +"It's cold, you might want to carry a jacket")
 }
-else if(F<=21 && 16>=F){
-    alert(F+"°" + " " +" " +"It is warm, you could wear t-shirt and jeans")
+else if(F<=21 && F>=16){
+    result2.innerHTML =(F+"°" + " " +" " +"It is warm, you could wear t-shirt and jeans")
 }
-else
-    alert(F+"°" +" " + " " +"It's a hot day, you can rock your shorts.")
+else if(F>21)
+result2.innerHTML =(F+"°" +" " + " " +"It's a hot day, you can rock your shorts.")
 }
 
-console.log(CelToFah(-8))
 

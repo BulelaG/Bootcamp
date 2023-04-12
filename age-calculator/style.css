@@ -21,6 +21,12 @@ h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight:300;
 }
+h3{
+    color: white;
+    font-style:oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:300;
+}
 button{
     color: black;
     font-style:oblique;
