@@ -13,7 +13,7 @@ if(!F) result.innerHTML = ("Please enter a value.")
  
 else if(isNaN(F)) result.innerHTML =("Please enter a value") 
 
-else if(C<-273.15) result.innerHTML =("It can not be this cold") 
+else if(C<-273.15) result.innerHTML =("It can not be this cold, that's an absolute zero") 
 
 else if(C<16){
     result.innerHTML =(C+ "°" +" " + " " +"It's cold, you might want to carry a jacket")

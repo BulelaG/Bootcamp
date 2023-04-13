@@ -1,5 +1,10 @@
 // Declare an array object for our array of images
+
+
 let images = ["./Age-C.png","./Temp-C.png","./Emoji-S.png"];
+
+sessionStorage.setItem("image",JSON.stringify(inputImage) );
+
 
 // // Create image object and assign width and height
 // let img1 = new Image('1024','768');
@@ -24,44 +29,45 @@ let images = ["./Age-C.png","./Temp-C.png","./Emoji-S.png"];
 // images.push("Age-C.png")
 // images.push("Temp-C.png")
 // images.push("Emoji-S.png")
+
 let index = 0;
 img.src = images[index]
 
-function next(){
+function upload(){
 
-  index++;
-   
-    
+ // ------------------session storage-----------------------------------------
 
-  if(index >= images.length){
-    index  = 0;
-    
-      
-  }
+ let inputImage = document.getElementById("pic").value 
 
-  img.src = images[index]
+ images.push(inputImg)
+
+ sessionStorage.setItem("image",JSON.stringify(inputImage) );
+
+ let inputImg = sessionStorage.getItem(JSON.parse(".image"))
+
+ console.log(inputImg)
+
+
+ // --------------------------------------------------------------------------
+
+ document.getElementById("pic").value = " "
+
+
+ }
+
+// function next(){
+
+//   index++;
+//   if(index >= images.length){ index  = 0;}
+//   img.src = images[index]
+
+// }
+
+// function prev(){
+
+//   index--;
+//   if(index < 0){
+//   index  = images.length - 1;}
+//   img.src = images[index]
  
-}
-
-
-function prev(){
-
-  index--;
-  
-    
-  if(index < 0){
-      index  = images.length - 1;
-      
-  }
-  img.src = images[index]
- 
-}
-
-
-
-
-
-
-
-
-
+// }
