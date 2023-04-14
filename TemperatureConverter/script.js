@@ -34,10 +34,8 @@ result.innerHTML =(C+ "°" +" " + " " +"It's a hot day, you can rock your shorts
 // ------------ Celcius to Fahrenheits-----------
 
 function CelToFah(){
-
 let c = Number(document.getElementById("Fahrenheitz").value)
 let F = (c*9/5 )+32 
-
 result2 = document.getElementById("results")
 result2.innerHTML = F
 
