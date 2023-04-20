@@ -1,75 +1,50 @@
-// Declare an array object for our array of images
-
+// Declare an empty array object for our array of images
 let images;
+
+// check if we have data in storage
 if(sessionStorage.getItem("Pics")){images =JSON.parse(sessionStorage.getItem("Pics"))}
+// if not assign data
 else{images = ["./Age-C.png","./Temp-C.png","./Emoji-S.png"]}
 
 
-
-
-// // Create image object and assign width and height
-// let img1 = new Image('1024','768');
-
-// Assign src attribute to image object
-// img1.src = 'Age-C.png';
-
-// Push image object to arrayOfImages
-// images.push(img1);
-
-// Output arrayOfImages to the console
-// console.log(images);
-
-// images.push("Age-C.png")
-//
-
-
+// set an index
 let index = 0;
+// dom connecting/manipulation to image tag
 img.src = images[index]
 
+// function to upload an image
 function upload(){
+let inputImage = document.getElementById("pic").value  // \dom method for input value
+images.push(inputImage)                                //adding images to array
 
-let inputImage = document.getElementById("pic").value 
-images.push(inputImage)
-
-sessionStorage.setItem("Pics", JSON.stringify(images));
-let inputImag = sessionStorage.getItem(JSON.parse("Pics"));
-
-
-document.getElementById("img").innerHTML = inputImag
-
-
-
-document.getElementById("pic").value = " "
+sessionStorage.setItem("Pics", JSON.stringify(images));     //adding array to session storage
+let inputImag = sessionStorage.getItem(JSON.parse("Pics")); //getting images/data and assigning it to a new variable
+document.getElementById("img").innerHTML = inputImag    //displaying data on image tag
+document.getElementById("pic").value = " "  // clearing input tag
 
  }
  
 
-// function upload(){
+function remove(){
+  // images.pop(inputImage)                                //adding images to array
+  removeImage  =  sessionStorage.removeItem("Pics"); //remove image from session storage 
+  img.src = images[index]
+  document.getElementById("img").innerHTML = removeImage    //displaying data on image tag
 
-//     let inputImage = document.getElementById("pic").value 
-//     sessionStorage.setItem("image",inputImage );
-//     let inputImag = sessionStorage.getItem(("image"));
-//      images.push(inputImag)
-//     document.getElementById("pic").value = " "
+ }
    
-//     }
-   
+
 
 function next(){
-
   index++;
   if(index >= images.length){ index  = 0;}
   img.src = images[index]
-
 }
 
 function prev(){
-
   index--;
-  if(index < 0){
-  index  = images.length - 1;}
+  if(index < 0){index  = images.length - 1;}
   img.src = images[index]
- 
 }
 
 
