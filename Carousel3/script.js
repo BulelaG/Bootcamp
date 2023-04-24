@@ -12,7 +12,7 @@ let index = 0;
 // dom connecting/manipulation to image tag
 img.src = images[index]
 
-<<<<<<< HEAD
+ HEAD
 // function upload(){
 //     let inputImage = document.getElementById("pic").value 
 //     sessionStorage.setItem("image",inputImage );
@@ -20,7 +20,7 @@ img.src = images[index]
 //      images.push(inputImag)
 //     document.getElementById("pic").value = " "
 //     }
-=======
+
 // function to upload an image
 function upload(){
 let inputImage = document.getElementById("pic").value  // \dom method for input value
@@ -41,7 +41,7 @@ function remove(){
   document.getElementById("img").innerHTML = removeImage    //displaying data on image tag
 
  }
->>>>>>> e53d3f570eb20a5199eea2bc9b71a8aaa9f3bb60
+ e53d3f570eb20a5199eea2bc9b71a8aaa9f3bb60
    
 
 
