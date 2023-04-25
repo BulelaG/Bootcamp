@@ -39,19 +39,14 @@ function remove(){
   removeImage  =  sessionStorage.removeItem("Pics"); //remove image from session storage 
   img.src = images[index]
   document.getElementById("img").innerHTML = removeImage    //displaying data on image tag
-
- }
- e53d3f570eb20a5199eea2bc9b71a8aaa9f3bb60
+}
    
-
-
 function next(){
   index++;
   if(index >= images.length){ index  = 0;}
   img.src = images[index]
 }
  
-
 function prev(){
   index--;
   if(index < 0){index  = images.length - 1;}

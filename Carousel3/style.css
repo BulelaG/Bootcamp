@@ -15,10 +15,8 @@ body{
     background-repeat: no-repeat;
 }
 
-.Project{
-display: flex;
+.Project{display: flex;}
 
-}
 h1{
     text-align: center;
     border-bottom:solid 1px white;
@@ -26,12 +24,12 @@ h1{
     font-weight: 1000;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
 .Buttons{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .slider{
     margin-top: 20px;
@@ -46,6 +44,8 @@ img{
     height: 300px;
     width: 400px;
 }
+
+
 
 .img{
 
