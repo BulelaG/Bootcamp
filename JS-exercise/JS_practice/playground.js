@@ -21,3 +21,6 @@ let fullnames = [
     for (let person of fullnames){
         console.log(person.lastname)
     }
+
+    for(l = 0; l <firstnames.length;l++){
+      console.log(firstnames[l])}
