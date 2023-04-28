@@ -6,6 +6,7 @@
 //    {name:"Peter", lastname:"Parker" }]
 
 //     for(l = 0; l <firstnames.length;l++){
+
 //     console.log(firstnames[l])}
     
 //     const firstnames = fullnames.map(person => person.name);
@@ -34,10 +35,35 @@
 
 // -------------------Reverse a String--------------------
 
-let str = "Bulela"
-let c= ""
-for(k = str.length-1; k >= 0; k-- ){
-  c = c + str[k]
+// let str = "Bulela"
+// let c= ""
+// for(k = str.length-1; k >= 0; k-- ){
+//   c = c + str[k]
  
-}
-console.log(c)
+// }
+// console.log(c)
+
+// function evenORodd(nums){
+
+//   if(nums % 2 == 0){
+//     return "Even"
+//   }
+//   else
+//   {
+//     return "Odd"
+//   }
+// }
+// console.log(evenORodd(3))
+
+
+// -------sort ascendingly -------
+
+// let array = [1,1,2,3,-1]
+// let array2 = array.sort((a,b)=>a-b)
+// console.log(array2)
+
+ // -------sort descendingly -------
+
+let array = [1,1,2,3,-1]
+let array2 = array.sort((a,b)=>b-a)
+console.log(array2)
