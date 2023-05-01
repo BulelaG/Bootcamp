@@ -13,26 +13,48 @@ let index = 0;
 img.src = images[index]
 
 // function to upload an image
-function upload(){
-let inputImage = document.getElementById("pic").value  // \dom method for input value
-images.push(inputImage)                                //adding images to array
+// function upload(){
+// let inputImage = document.getElementById("pic").value  // \dom method for input value
+// images.push(inputImage)                                //adding images to array
 
-sessionStorage.setItem("Pics", JSON.stringify(images));     //adding array to session storage
-let inputImag = sessionStorage.getItem(JSON.parse("Pics")); //getting images/data and assigning it to a new variable
-document.getElementById("img").innerHTML = inputImag    //displaying data on image tag
-document.getElementById("pic").value = " "  // clearing input tag
+// sessionStorage.setItem("Pics", JSON.stringify(images));     //adding array to session storage
+// let inputImag = sessionStorage.getItem(JSON.parse("Pics")); //getting images/data and assigning it to a new variable
+// document.getElementById("img").innerHTML = inputImag    //displaying data on image tag
+// document.getElementById("pic").value = " "  // clearing input tag
 
- }
+//  }
  
+function upload() {
+  let inputImage = document.getElementById("pic").value.trim();
+  if (inputImage === "") {
+    alert("Please enter a valid image URL");
+    return;
+  }
+  images.push(inputImage);
+  sessionStorage.setItem("Pics", JSON.stringify(images));
+  index = images.length - 1;
+  img.src = images[index];
+  document.getElementById("pic").value = "";
+}
+
+// function remove(){
+//   // images.pop(inputImage)                                //adding images to array
+//   removeImage  =  sessionStorage.removeItem("Pics"); //remove image from session storage 
+//   img.src = images[index]
+//   document.getElementById("img").innerHTML = removeImage    //displaying data on image tag
+
+//  }
+   
+
+// -----
 
 function remove(){
-  // images.pop(inputImage)                                //adding images to array
-  removeImage  =  sessionStorage.removeItem("Pics"); //remove image from session storage 
-  img.src = images[index]
-  document.getElementById("img").innerHTML = removeImage    //displaying data on image tag
-
- }
-   
+  images.pop();
+  sessionStorage.setItem("Pics", JSON.stringify(images));
+  index = 0;
+  img.src = images[index];
+}
+// -----
 
 
 function next(){
