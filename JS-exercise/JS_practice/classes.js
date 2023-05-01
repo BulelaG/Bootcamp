@@ -31,11 +31,17 @@ const person1 ={
     province: "Western Cape" 
 }
 }
-const person2 = {
-    age: 22,
-    favouriteFood: "Strawberry"
+// const person2 = {
+//     age: 22,
+//     favouriteFood: "Strawberry"
+// }
+
+
+function printUser({ fname, age }){
+    console.log("Name is: ${fname}. Age is: ${age}")
 }
+   
+printUser(person1)
+// const person3 = {...person1, ...person2}
 
-const person3 = {...person1, ...person2}
-
-console.log(person3)
+// console.log(person1)
