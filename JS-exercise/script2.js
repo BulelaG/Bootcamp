@@ -69,7 +69,7 @@
 //     }
 
 
-// --------------Get an initial of a an array of names--------------------------------
+// --------------Get an initial of an array of names--------------------------------
 
 
 // let fnames = ["Yamnkela","Aphelele","Liya","Bulela"]

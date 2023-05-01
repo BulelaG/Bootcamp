@@ -1,5 +1,5 @@
 
-// Array.methods()
+// .methods()
 
 // pop()  for removing the last element
 // push() for adding the last element
@@ -21,12 +21,12 @@
 // console.log(numbers)
 
 
-// Manipulating Arrays with Array Methods 
-// create array with even and odd number
-// create two empty arrays
-// take even numbers put them in 1 array
-// take odd numbers put them in 1 array
-// return the two arrays
+// Manipulating s with  Methods 
+// create  with even and odd number
+// create two empty s
+// take even numbers put them in 1 
+// take odd numbers put them in 1 
+// return the two s
 
 
 

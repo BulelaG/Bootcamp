@@ -11,13 +11,13 @@ let images = ["./Age-C.png","./Temp-C.png","./Emoji-S.png"];
 // img3.src = 'Emoji-S.png';
 
 
-// Push image object to arrayOfImages
+// Push image object to OfImages
 // images.push(img1);
 // images.push(img2);
 // images.push(img3);
 
 
-// Output arrayOfImages to the console
+// Output OfImages to the console
 // console.log(images);
 
 // images.push("Age-C.png")

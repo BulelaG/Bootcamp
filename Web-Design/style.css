@@ -51,11 +51,7 @@ p{
 .nav-list li a {
     font-size: 20px;
     text-decoration: none;
-    /* color: rgb(202, 101, 19); */
-   color:rgb(60, 255, 1);
-
-
-
+    color:rgb(60, 255, 1);
 }
 
 .nav-list li a:hover {
