@@ -5,24 +5,26 @@
 //    { name:"Jane", lastname:"Doeee" },
 //    {name:"Peter", lastname:"Parker" }]
 
-//     for(l = 0; l <firstnames.length;l++){
+//     for(l = 0; l <fullnames.length;l++){
 
-//     console.log(firstnames[l])}
+
+//     console.log(fullnames[l].lastname)}
     
-//     const firstnames = fullnames.map(person => person.name);
-//     console.log(firstnames)
+    // const firstnames = fullnames.map(person => person.name);
+    // console.log(firstnames)
 
-//     for (let person of fullnames){
-//         console.log(person.lastname)
-//     }
+    // for (let person of fullnames){
+    //     console.log(person.name)
+    // }
 
 // ---------------Spread oparator-------------------------------------
 
 // function copyArray(array1,array2,index){
-// arrayCopy=array1.slice()
+// // arrayCopy=array1.slice()
 // array1.splice(index,0,...array2)
 // console.log(array1)
-// console.log(array2)}
+// }
+
 // copyArray([1,2,3],[3,2,1],1)
 
 // -------------Spread oparator-------------------------
@@ -31,7 +33,7 @@
 // let n = 1
 // function copy(ar1,ar2,n){
 // return [...ar1.slice(0,n), ...ar2, ...ar1.slice(n)]}
-// copy(ar1,ar2,n)
+// console.log(copy(ar1,ar2,n))
 
 // -------------------Reverse a String--------------------
 
@@ -64,6 +66,6 @@
 
  // -------sort descendingly -------
 
-let array = [1,1,2,3,-1]
-let array2 = array.sort((a,b)=>b-a)
-console.log(array2)
+// let array = [1,1,2,3,-1]
+// let array2 = array.sort((a,b)=>b-a)
+// console.log(array2)
