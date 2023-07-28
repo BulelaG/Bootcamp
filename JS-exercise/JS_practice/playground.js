@@ -1,21 +1,21 @@
 // LOOPING AN ARRAY OF OBJECTS
 
-// let fullnames = [
-//    { name:"John", lastname:"Doe" },
-//    { name:"Jane", lastname:"Doeee" },
-//    {name:"Peter", lastname:"Parker" }]
+let fullnames = [
+   { name:"John", lastname:"Doe" },
+   { name:"Jane", lastname:"Doeee" },
+   {name:"Peter", lastname:"Parker" }]
 
-//     for(l = 0; l <fullnames.length;l++){
+    for(l = 0; l <fullnames.length;l++){
 
 
-//     console.log(fullnames[l].lastname)}
+    console.log(fullnames[l].lastname)}
     
-    // const firstnames = fullnames.map(person => person.name);
-    // console.log(firstnames)
+    const firstnames = fullnames.map(person => person.name);
+    console.log(firstnames)
 
-    // for (let person of fullnames){
-    //     console.log(person.name)
-    // }
+    for (let person of fullnames){
+        console.log(person.name)
+    }
 
 // ---------------Spread oparator-------------------------------------
 

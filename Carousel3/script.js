@@ -22,7 +22,6 @@ img.src = images[index]
 //     }
 
 // function to upload an image
-<<<<<<< HEAD
 // function upload(){
 // let inputImage = document.getElementById("pic").value  // \dom method for input value
 // images.push(inputImage)                                //adding images to array
@@ -31,16 +30,6 @@ img.src = images[index]
 // let inputImag = sessionStorage.getItem(JSON.parse("Pics")); //getting images/data and assigning it to a new variable
 // document.getElementById("img").innerHTML = inputImag    //displaying data on image tag
 // document.getElementById("pic").value = " "  // clearing input tag
-=======
-function upload(){
-let inputImage = document.getElementById("pic").value  // \dom method for input value
-images.push(inputImage)                                //adding images to 
-
-sessionStorage.setItem("Pics", JSON.stringify(images));     //adding  to session storage
-let inputImag = sessionStorage.getItem(JSON.parse("Pics")); //getting images/data and assigning it to a new variable
-document.getElementById("img").innerHTML = inputImag    //displaying data on image tag
-document.getElementById("pic").value = " "  // clearing input tag
->>>>>>> 0955deb75fb72b80b1440c30db84d235763b4a69
 
 //  }
  
@@ -69,23 +58,15 @@ function upload() {
 // -----
 
 function remove(){
-<<<<<<< HEAD
   images.pop();
   sessionStorage.setItem("Pics", JSON.stringify(images));
   index = 0;
   img.src = images[index];
 }
+
 // -----
 
 
-=======
-  // images.pop(inputImage)                                //adding images to 
-  removeImage  =  sessionStorage.removeItem("Pics"); //remove image from session storage 
-  img.src = images[index]
-  document.getElementById("img").innerHTML = removeImage    //displaying data on image tag
-}
-   
->>>>>>> 0955deb75fb72b80b1440c30db84d235763b4a69
 function next(){
   index++;
   if(index >= images.length){ index  = 0;}
